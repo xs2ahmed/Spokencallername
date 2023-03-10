@@ -1,0 +1,116 @@
+<resources>
+    <string name="app_name">Spokencallername</string>
+    <!-- Settings Activity Title -->
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+
+
+
+
+
+    <string name="caller_unknown">unknown</string>
+
+    <string name="call_settings">Call Settings</string>
+    <string name="call_isenabled_summary_off">Spoken alert for incoming calls is disabled</string>
+    <string name="call_isenabled_summary_on">Spoken alert for incoming calls is enabled</string>
+    <string name="call_isenabled_title">Enable call alerts</string>
+    <string name="call_repeat_times_summary">No of times to alert current set to %</string>
+    <string name="call_repeat_times_title">Alert count</string>
+    <string name="call_alert_speech_dialog_message">% = Caller name</string>
+    <string name="call_alert_speech_default">call from %</string>
+    <string name="call_alert_speech_title">Call alert speech</string>
+    <string name="call_alert_speech_summary">Customise the speech for incoming call</string>
+    <string name="call_repeat_seconds_title">Alert interval</string>
+
+    <string name="call_repeat_seconds_summary">Interval between spoken alerts current value is % seconds</string>
+    <string name="sms_settings">SMS Settings</string>
+    <string name="sms_isenabled_title">Enable Sms alerts</string>
+    <string name="sms_isenabled_summary_on">Spoken alert for incoming sms is enabled</string>
+    <string name="sms_isenabled_summary_off">Spoken alert for incoming sms is disabled</string>
+    <string name="sms_alert_speech_title">Sms alert speech</string>
+    <string name="sms_alert_speech_summary">Customise the speech to alert for new sms</string>
+    <string name="sms_read_summary_on">Sms content reading is on</string>
+    <string name="sms_read_summary_off">Sms content reading is off</string>
+    <string name="sms_alert_speech_default">new message from %</string>
+    <string name="sms_read_title">Read SMS</string>
+    <string name="sms_alert_speech_dialog_message">% = Smser name</string>
+
+
+    <string name="sms_disable_read_for_unknown_title">Avoid unknown read</string>
+    <string name="sms_disable_read_for_unknown_summary_on">Unknown contact messages will not be read out</string>
+    <string name="sms_disable_read_for_unknown_summary_off">Unknown contact messages will also be read out</string>
+
+    <string name="common_settings">Common Settings</string>
+    <string name="common_speech_pitch_title">Speech pitch</string>
+    <string name="common_speech_pitch_summary">High pitch for female voice and low for male current is %</string>
+    <string name="common_speech_speed_title">Speech speed</string>
+    <string name="common_speech_speed_summary">currently set to %</string>
+
+    <string name="unknown_caller_name_title">Unknown number</string>
+    <string name="unknown_caller_name_summary">Specify name to be spoken when caller no is not in contacts</string>
+    <string name="unknown_caller_name_default">Unknown</string>
+
+    <string name="speak_number_summary">Speak number (if available) if caller not in contacts</string>
+    <string name="speak_number_title">Speak number</string>
+
+    <string name="suppress_speech_rotate_summary_off">Speech will stop when you turn or flip the phone, currently off</string>
+    <string name="suppress_speech_rotate_summary_on">Speech will stop when you turn or flip the phone, currently on</string>
+    <string name="suppress_speech_rotate_title">Quiet speech on turn</string>
+
+    <string name="test_call_title">Test call settings</string>
+    <string name="test_call_summary">Test speech for current call settings</string>
+    <string name="test_sms_title">Test sms settings</string>
+    <string name="test_sms_summary">Test speech for current sms settings</string>
+
+    <string name="about">About</string>
+    <string name="help_and_support_title">Help and support</string>
+    <string name="question1">It doesn\'t speak when there is a call or sms ?</string>
+    <string name="answer1">Check the speech volume in the Volume setting of the app. Also If ringer volume is silent, there will be no speech.
+            Furthermore Spoken caller name has two settings to enable disable speech [Enable call alert] and []Enable sms alert], these settings should be checked to ensure the relevant speech is made.
+            If the mentioned settings are correct but still there is no speech then you should ensure that Text to speech engine is installed in your mobile. By default text to speech engine is installed on android systems. click the button below to check if TTS is installed correctly
+    </string>
+
+
+    <string name="check_tts_install">Check TTS Engine Installation</string>
+    <string name="question2">Is there a way to silent the speech when I pick up the phone ?</string>
+    <string name="answer2">There is a setting named [quite on turn] in the common section. If you enable this setting you will be able to stop the speech when it is in progress. For example if there is an SMS being read out and you just want to make it quite. All you do is flip your phone in any direction and the speech will stop, similarly you can stop the speech for incoming call but the mentioned setting should be checked for this feature to work </string>
+    <string name="question3">Is is possible to turn off ringtone and just listen to speech ?</string>
+    <string name="answer3">Yes, You should select [silent ringtone] from Settings -> Sound -> Phone ringtone</string>
+    <string name="send_log_instructions">If you find that your problem remains unresolved, then please let the problem occur a few times (or make it happen) and then immediately come back to this screen. Fill in your name, email and describe the problem and click the send log button. Internet connection is required for the log file to be sent</string>
+    <string name="problem_report">Problem report</string>
+
+    <string name="hint_name">Name</string>
+    <string name="hint_email">Email address</string>
+    <string name="hint_description">Problem description</string>
+    <string name="extended_log">Extended log</string>
+    <string name="send_log">Send Log</string>
+
+    <string name="menu_rate">Like it</string>
+    <string name="menu_visit">Visit online</string>
+    <string name="check_online_information">More help online</string>
+
+    <string name="volume_settings">Volume settings</string>
+    <string name="speech_volume">Speech volume</string>
+    <string name="speech_volume_summary">Set the volume for call and sms speech currently set to %</string>
+
+
+    <string name="notification_title">Spoken alert</string>
+    <string name="notification_message">Tap here to stop the speech</string>
+    <string name="tts_absent_message"> Text to speech engine is not installed on your system or perhaps your sd card is unavailable. speech engine is required for the app to work </string>
+
+
+</resources>

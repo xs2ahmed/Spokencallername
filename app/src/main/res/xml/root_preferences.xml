@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen   xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:example="mahmed.net.spokencallername.SeekBarPreference"
+    android:key="pref_screen">
+
+
+
+
+    <PreferenceCategory android:title="@string/call_settings" >
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="call_isenabled"
+            android:summaryOff="@string/call_isenabled_summary_off"
+            android:summaryOn="@string/call_isenabled_summary_on"
+            android:title="@string/call_isenabled_title" />
+
+        <EditTextPreference
+            android:dependency="call_isenabled"
+            android:key="call_alert_speech"
+            android:summary="@string/call_alert_speech_summary"
+            android:title="@string/call_alert_speech_title"
+            android:defaultValue="@string/call_alert_speech_default"
+            android:dialogMessage="@string/call_alert_speech_dialog_message"/>
+
+
+
+
+
+    </PreferenceCategory>
+
+
+
+    <PreferenceCategory android:key="sms_settings"
+        android:title="@string/sms_settings" >
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="sms_isenabled"
+            android:title="@string/sms_isenabled_title" android:summaryOn="@string/sms_isenabled_summary_on" android:summaryOff="@string/sms_isenabled_summary_off"/>
+
+        <EditTextPreference
+            android:dependency="sms_isenabled"
+            android:key="sms_alert_speech"
+            android:summary="@string/sms_alert_speech_summary"
+            android:title="@string/sms_alert_speech_title" android:defaultValue="@string/sms_alert_speech_default" android:dialogMessage="@string/sms_alert_speech_dialog_message"/>
+
+        <CheckBoxPreference
+            android:key="sms_read"
+            android:summaryOff="@string/sms_read_summary_off"
+            android:summaryOn="@string/sms_read_summary_on"
+            android:title="@string/sms_read_title"
+            android:dependency="sms_isenabled"
+            android:defaultValue="false"/>
+
+        <CheckBoxPreference
+            android:key="sms_disable_read_for_unknown"
+            android:summaryOff="@string/sms_disable_read_for_unknown_summary_off"
+            android:summaryOn="@string/sms_disable_read_for_unknown_summary_on"
+            android:title="@string/sms_disable_read_for_unknown_title"
+            android:dependency="sms_read"
+            android:defaultValue="false"/>
+
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:key="common_settings"
+        android:title="@string/common_settings" >
+
+        <EditTextPreference
+
+            android:key="unknown_caller_name"
+            android:summary="@string/unknown_caller_name_summary"
+            android:title="@string/unknown_caller_name_title"
+            android:defaultValue="@string/unknown_caller_name_default"
+            />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="speak_number"
+            android:summary="@string/speak_number_summary"
+            android:title="@string/speak_number_title" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="suppress_speech_rotate"
+            android:summaryOff="@string/suppress_speech_rotate_summary_off"
+            android:summaryOn="@string/suppress_speech_rotate_summary_on"
+            android:title="@string/suppress_speech_rotate_title" />
+
+
+
+        <Preference android:dependency="call_isenabled"
+            android:key="test_call"
+            android:title="@string/test_call_title"
+            android:summary="@string/test_call_summary"/>
+
+        <Preference android:key="test_sms"
+            android:dependency="sms_isenabled"
+            android:title="@string/test_sms_title"
+            android:summary="@string/test_sms_summary"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/about" >
+
+        <Preference
+            android:key="help_and_support"
+            android:title="@string/help_and_support_title"
+            />
+
+
+
+    </PreferenceCategory>
+</PreferenceScreen>
