@@ -7,6 +7,7 @@ import mahmed.net.spokencallername.utils.Settings;
 import mahmed.net.spokencallername.utils.Utils;
 import android.content.Context;
 import android.media.AudioManager;
+import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.speech.tts.TextToSpeech;
@@ -36,7 +37,8 @@ public class Speaker implements ISpeaker, OnInitListener
 	
 	private ISpeechSource ts = null;
 	private ISpeakerEndListener endListener = null;	
-	private final HashMap<String, String> params;
+	//private final HashMap<String, String> params;
+	private  Bundle params = null;
 	private Handler h = null;	
 	
 	private final TextToSpeech tts;	
@@ -49,10 +51,16 @@ public class Speaker implements ISpeaker, OnInitListener
 	{			
 		this.endListener = endListener;
 		this.settings = settings;
-		params = new HashMap<String, String>();		 
-		params.put(TextToSpeech.Engine.KEY_PARAM_STREAM, String.valueOf(AudioManager.STREAM_NOTIFICATION));
-		params.put(TextToSpeech.Engine.KEY_PARAM_UTTERANCE_ID, "mahmed.net.apps");		
-	
+
+		//params = new HashMap<String, String>();
+		//params.put(TextToSpeech.Engine.KEY_PARAM_STREAM, String.valueOf(AudioManager.STREAM_NOTIFICATION));
+		//params.put(TextToSpeech.Engine.KEY_PARAM_UTTERANCE_ID, "mahmed.net.apps");
+
+		params = new Bundle();
+		params.putString(TextToSpeech.Engine.KEY_PARAM_STREAM, String.valueOf(AudioManager.STREAM_NOTIFICATION));
+		params.putString(TextToSpeech.Engine.KEY_PARAM_UTTERANCE_ID, "mahmed.net.apps");
+
+
 		this.context = context;
 		
 		// Why synchronize ?
@@ -84,7 +92,7 @@ public class Speaker implements ISpeaker, OnInitListener
 				else if(msg.what == REQUEST_SPEECH)
 				{	
 					String text = ts.provideTextToSpeak();
-					tts.speak(text, TextToSpeech.QUEUE_ADD, params);
+					tts.speak(text, TextToSpeech.QUEUE_ADD, params , "sd");
 				}
 				else if(msg.what == SPEECH_COMPLETE)
 				{

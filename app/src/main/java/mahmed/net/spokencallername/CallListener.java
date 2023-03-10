@@ -9,7 +9,8 @@ import android.media.AudioManager;
 import android.os.Bundle;
 import android.telephony.SmsMessage;
 import android.telephony.TelephonyManager;
-import mahmed.net.spokencallername.services.*;
+
+import mahmed.net.spokencallername.services.ManagementService;
 import mahmed.net.spokencallername.utils.Constants;
 import mahmed.net.spokencallername.utils.Settings;
 import mahmed.net.spokencallername.utils.Utils;
@@ -108,8 +109,7 @@ public class CallListener extends BroadcastReceiver {
 				Utils.log(TAG, "phone number is available startService() will be called");
 				ManagementService.startService(m_context, strPhoneNumber, Constants.ALERT_TYPE_CALL,"");
 			}
-			
-							
+
 			
 		}
 		else if (newCallState.equals(TelephonyManager.EXTRA_STATE_OFFHOOK))

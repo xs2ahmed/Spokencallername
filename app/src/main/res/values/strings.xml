@@ -19,9 +19,6 @@
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
 
 
-
-
-
     <string name="caller_unknown">unknown</string>
 
     <string name="call_settings">Call Settings</string>
@@ -111,6 +108,15 @@
     <string name="notification_title">Spoken alert</string>
     <string name="notification_message">Tap here to stop the speech</string>
     <string name="tts_absent_message"> Text to speech engine is not installed on your system or perhaps your sd card is unavailable. speech engine is required for the app to work </string>
+    <string name="title_activity_main">MainActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 
 
 </resources>

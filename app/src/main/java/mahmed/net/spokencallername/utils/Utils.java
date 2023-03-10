@@ -4,8 +4,6 @@ import mahmed.net.spokencallername.services.ManagementService;
 import android.app.ActivityManager;
 import android.app.ActivityManager.RunningServiceInfo;
 import android.content.Context;
-import android.content.pm.PackageInfo;
-import android.content.pm.PackageManager.NameNotFoundException;
 import android.os.Build;
 import android.util.Log;
 import android.widget.Toast;
